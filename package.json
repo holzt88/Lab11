@@ -1,0 +1,17 @@
+{
+  "name": "render-mern-session-cache-starter",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Teaching starter for React + Express + MongoDB Atlas with session and cache TODOs",
+  "scripts": {
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=20 <23"
+  }
+}
